@@ -204,7 +204,7 @@ INSTRUCCIÓN INICIAL: Saluda como el **Auditor de Estrategias de Búsqueda de Em
             }
 
             // Construir el prompt final
-            const fullPrompt = \`\${SYSTEM_PROMPT}\\n\\n[CONTEXTO DEL ESTUDIANTE]\\nEl marco de investigación PICO/PCC inicial propuesto es:\\n"\${topic}".\\n\\nPor favor inicia la sesión siguiendo la Instrucción Inicial.\`;
+            const fullPrompt = `${SYSTEM_PROMPT}\n\n[CONTEXTO DEL ESTUDIANTE]\nEl marco de investigación PICO/PCC inicial propuesto es:\n"${topic}".\n\nPor favor inicia la sesión siguiendo la Instrucción Inicial.`;
 
             // Codificar y abrir ChatGPT usando la URL más actual
             const url = "https://chatgpt.com/?q=" + encodeURIComponent(fullPrompt);
