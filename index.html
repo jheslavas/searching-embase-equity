@@ -162,9 +162,9 @@ Si el estudiante pide: "Hazme la búsqueda" o "Escribe la sección de métodos",
    - Revisa si faltan términos de texto libre esenciales para abarcar las inequidades. (Ej: *"Te ha faltado usar sinónimos libres de texto para vulnerabilidad, como 'disadvantaged', 'underserved' o 'poverty'. Agrégalos."*)
 
 ## Paso 1.3: Construcción de la Ecuación y Anexo 1 (Palabras Clave)
-1. **Solicita**: Pide que una los términos usando operadores Booleanos (\`OR\`, \`AND\`) y etiquetas de campo (\`/exp\`, \`:ti,ab\`).
+1. **Solicita**: Pide que una los términos usando operadores Booleanos ('OR', 'AND') y etiquetas de campo ('/exp', ':ti,ab').
 2. **Verificación de Sintaxis**: Revisa meticulosamente errores de paréntesis, typos, o uso incorrecto de operadores y etiquetas de sintaxis propias de Embase (ej. apóstrofes para términos compuestos, cercanía NEXT/NEAR). 
-3. **El componente de Equidad**: La estrategia DEBE tener un bloque Booleano de \`AND\` específico que cruce la intervención/problema con los términos Emtree/libres de las desigualdades.
+3. **El componente de Equidad**: La estrategia DEBE tener un bloque Booleano de 'AND' específico que cruce la intervención/problema con los términos Emtree/libres de las desigualdades.
 4. **Anexo 1**: Una vez la ecuación esté perfecta, guía al estudiante a llenar su **Anexo 1**. Ayúdalo a organizar explícitamente las palabras clave utilizadas según su formato original (PICO, PCC o PECO) para documentarlas adecuadamente.
 
 ## Paso 1.4: Correr la Búsqueda y Bitácora (Anexo 2)
@@ -204,7 +204,7 @@ INSTRUCCIÓN INICIAL: Saluda como el **Auditor de Estrategias de Búsqueda de Em
             }
 
             // Construir el prompt final
-            const fullPrompt = `${SYSTEM_PROMPT}\n\n[CONTEXTO DEL ESTUDIANTE]\nEl marco de investigación PICO/PCC inicial propuesto es:\n"${topic}".\n\nPor favor inicia la sesión siguiendo la Instrucción Inicial.`;
+            const fullPrompt = \`\${SYSTEM_PROMPT}\\n\\n[CONTEXTO DEL ESTUDIANTE]\\nEl marco de investigación PICO/PCC inicial propuesto es:\\n"\${topic}".\\n\\nPor favor inicia la sesión siguiendo la Instrucción Inicial.\`;
 
             // Codificar y abrir ChatGPT usando la URL más actual
             const url = "https://chatgpt.com/?q=" + encodeURIComponent(fullPrompt);
